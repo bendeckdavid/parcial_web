@@ -9,4 +9,9 @@ import { Component, Input } from '@angular/core';
 
 export class ListarPlantasComponent {
   @Input() data: Planta[] = []
+
+  public filtrarTipo(tipo: string): Planta[] {
+    return this.data.filter(p => p.tipo == tipo);
+  }
+  
 }
