@@ -1,59 +1,50 @@
-# ParcialWeb
+# Evaluación Práctica - MISW-4104
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+## Descripción
 
-## Development server
+Este proyecto corresponde a la evaluación práctica del curso **MISW-4104**.  
+Consiste en una aplicación Angular que muestra un listado de plantas en venta, utilizando:
+- Un **módulo** específico para plantas
+- Una **clase `Planta`** que modela los datos
+- Un **servicio HTTP** para consumir un archivo JSON
+- Un **componente** que despliega la información en una **tabla de Bootstrap**
 
-To start a local development server, run:
+También se implementa el **conteo de plantas por tipo** y se desarrollaron **pruebas unitarias** para el componente. Todo el trabajo fue gestionado mediante GitHub, siguiendo las instrucciones de la evaluación.
+
+
+### Vista de la Aplicación
+
+![Render](./public/render.png)
+
+
+## Instalación
+
+Clona el repositorio o descomprime el ZIP adjunto. Luego, dentro de la carpeta del proyecto, ejecuta:
 
 ```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+> Recuerda que necesitas tener instalado previamente el **Angular CLI** (`npm install -g @angular/cli`).
 
-## Code scaffolding
+Accede a la aplicación en: [http://localhost:4200/](http://localhost:4200/)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+## Testing
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para ejecutar los tests:
 
 ```bash
-ng generate --help
+npm run test    # Usa Chrome si está disponible
+ng test         # Alternativa si no tienes Chrome instalado
 ```
 
-## Building
 
-To build the project run:
+## Recursos
 
-```bash
-ng build
-```
+- **Mockup de diseño**:  
+  [Figma - Mockups evaluación MISW-4104](https://www.figma.com/design/5NjgSjCs395umb40EEQpQW/Monitoria-MISW---Mockups-parcial-1B?node-id=3-91&p=f&t=LEfxsrLJX8duVNln-0)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Fuente de datos (JSON)**:  
+  [Plantas JSON - GitHub Gist](https://gist.githubusercontent.com/josejbocanegra/7b71922ee9e2ab407d3210f1e5cb8400/raw/cf1077fa69112bc67ff520dd6517a93afd3dae29/202212_MISW4104_Grupo2.json)
